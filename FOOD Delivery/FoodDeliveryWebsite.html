@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="icon" type="image" href="Logo.webp">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        #nav{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            justify-content: space-between;
+        }
+        .nav1{
+            display: flex;
+            font-size: x-large;
+            color: orange;
+            margin-left: 100px;
+        }
+        .nav2{
+            display: flex;
+            color: white;
+            gap: 20px;
+            margin-right: 50px;
+        }
+        #HOME{
+            background-color: black;
+            color: white;
+        }
+        #PortFolio{
+            background-color: black;
+            color: white;
+        }
+        #Blog{
+            background-color: black;
+            color: white;
+        }
+        #PostFormats{
+            background-color: black;
+            color: white;
+        }
+        .image{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 25px;
+            padding-left: 15%;
+
+            height: 50rem;
+            background-image: url(Restaurants.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+        }  
+        .center{
+            display: flex;
+            flex-direction: column;
+            zoom: 2;
+            gap: 10px;
+        }  
+        #head1{
+            color: yellow;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .para1{
+            color: white;
+        }
+        .para2{
+            color: white;
+        }
+        #button1{
+            cursor: pointer;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: white;
+            background-color: transparent;
+            width: 50%;
+            box-shadow: 2px 2px 1px white;
+        }
+        #button1:active{
+            transform: translateY(4px);
+        }
+        #head2{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            font-size: xx-large;
+        }
+        .cusine{
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+            border-style: solid;
+            border-color: black;
+            box-shadow: 5px 5px 2px grey;
+        }
+        #cus1{
+            margin: 5px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        #cus2{
+            margin: 5px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        #cus3{
+            margin: 5px;
+            border-style: solid;
+            border-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        #cash{
+            color: blue;
+            font-weight: bold;
+        }
+        #button2{
+            margin-bottom: 5px;
+            color: white;
+            background-color: red;
+        }
+        .Others{
+            margin: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        #o1{
+            display: flex;
+            flex-direction: column;
+            width: 25vw;
+        }
+        #o2{
+            padding-bottom: 15px;
+            border-bottom-style: solid;
+            border-bottom-width: 3.1px;
+            width: fit-content; 
+        }
+        #o3{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <nav id="nav">
+                <div class="nav1">
+                <img src="Logo.webp" height="20rem" alt="">
+                <p>ABC Restaurants</p>
+                </div>
+                <div class="nav2">
+                    <select name="HOME" id="HOME">
+                        <option value="">Restaurant 1</option>
+                        <option value="">Restaurant 2</option>
+                        <option value="">Restaurant 3</option>
+                    </select>
+                    <select name="" id="PortFolio">
+                        <option value="">PortFolio 1</option>
+                        <option value="">PortFolio 2</option>
+                    </select>
+                    <select name="" id="Blog">
+                        <option value="">Blog 1</option>
+                        <option value="">Blog 2</option>
+                        <option value="">Blog 3</option>
+                        <option value="">Blog 4</option>
+                        <option value="">Blog 5</option>
+                    </select>
+                    <select name="" id="PostFormats">
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                    </select>
+                </div>
+            </nav>
+        <div class="image">
+            <div class="center">
+                <h2 id="head1">ARE you hungry?</h2>
+                <p class="para1">Don't wait!!!</p>
+                <p class="para2">Let start to order food now!</p>
+                <button style="color: white;" id="button1">CLICK OUT MENU</button>
+            </div>
+        </div>
+            <h2 id="head2">FAVOURITE FOOD</h2>
+        </div>
+        <div class="cusine">
+            <div id="cus1">
+                <img style="margin: 5px;" src="JAP-Sushi.webp" alt="" height="250px" width="300px">
+                <div style="display: flex; gap: 5px;">
+                    <p id="cash">30,00 &euro;</p>
+                    <p>each</p>
+                </div>
+                <p>Dish 6</p>
+                <button id="button2">ADD TO CART</button>
+            </div>
+            <div id="cus2">
+                <img style="margin: 5px;" src="pasta-e-fagioli.jpeg" alt="" height="250px" width="300px">
+                <div style="display: flex; gap: 5px;">
+                    <p id="cash">37,00 &euro;</p>
+                    <p>each</p>
+                </div>
+                <p>Food 6</p>
+                <button id="button2">ADD TO CART</button>
+            </div>
+            <div id="cus3">
+                <img style="margin: 5px;" src="steamed-momos.jpg" alt="" height="250px" width="300px">
+                <div style="display: flex; gap: 5px;">
+                    <p id="cash">58,00 &euro;</p>
+                    <p>each</p>
+                </div>
+                <p>Special 6</p>
+                <button id="button2">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="Others">
+            <div id="o1">
+                <h3>About LT Restaurant</h3>
+                <br>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, vitae alias accusamus officia necessitatibus nemo ut odio magni eos aut quis possimus iste nulla veritatis porro eum facilis voluptates minima sunt esse! Placeat ullam ex nostrum inventore, quam dolorem itaque.
+                <span style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatibus.</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit, amet voluptatum repudiandae qui omnis quod dolore iure molestiae illum?</span>
+            </div>
+            <div>
+                <h3>Latest News</h3>
+                <br>
+                <p id="o2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, at.</p>
+                <br>
+                <p id="o2">Lorem ipsum dolor sit amet.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem officiis eos.</p>
+            </div>
+            <div>
+                <h3>Masterchef</h3>
+                <br>
+                <p id="o3" style="border-bottom-style: solid; border-bottom-width: 2px;">> Steve Stegner</p>
+                <br>
+                <p id="o3" style="border-bottom-style: solid; border-bottom-width: 2px;">> Camala Haddon</p>
+                <br>
+                <p id="o3" style="border-bottom-style: solid; border-bottom-width: 2px;">> Eva Savits</p>
+                <br>
+                <p id="o3" >> Mark Jonhson</p>
+            </div>
+            <div>
+                <h3>Services Offer</h3>
+                <br>
+                <p style="padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 2px;">> Wedding</p>
+                <br>
+                <p style="padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 2px;">> Birthday Party</p>
+                <br>
+                <p style="padding-bottom: 10px; border-bottom-style: solid; border-bottom-width: 2px;">> Company Party</p>
+                <br>
+                <p style="padding-bottom: 10px;">> Anniversary Party</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
